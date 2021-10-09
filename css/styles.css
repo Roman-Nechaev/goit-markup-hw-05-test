@@ -280,6 +280,7 @@
     color: #ffffff;
   }
 
+  
 
 
   /* ---------- Studio -------- */
@@ -904,12 +905,19 @@
     visibility: hidden;
     pointer-events: none;
 
+  }
+
+  .backdrop.is-hidden .modal {
+  transform:  scale(1.1);
 
   }
 
-  .modal{
+  .modal {
     width: 528px;
     min-height: 581px;
+
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     position: relative;
     background: #FFFFFF;
@@ -926,9 +934,9 @@
    
   }
 
-  .modal-icon-close{
+  /* .modal-icon-close{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
    
     
-  }
+  } */
